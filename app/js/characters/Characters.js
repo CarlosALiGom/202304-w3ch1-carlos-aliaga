@@ -1,19 +1,3 @@
-class Character {
-  isAlive = true;
-  series = "Game of Thrones";
-  characterData;
-
-  constructor(characterData) {
-    this.characterData = characterData;
-  }
-
-  communicate() {
-    return `${this.characterData.name} says: `;
-  }
-
-  die() {
-    this.isAlive = false;
-  }
-}
-
-export default Character;
+import { jaime, joffrey, daenerys, tyrion, bronn } from "../index.js";
+const characters = [jaime, joffrey, daenerys, tyrion, bronn];
+export default characters;
