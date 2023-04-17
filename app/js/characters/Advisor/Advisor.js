@@ -1,4 +1,4 @@
-import Character from "../Characters.js";
+import Character from "../Character.js";
 
 class Advisor extends Character {
   advises;
