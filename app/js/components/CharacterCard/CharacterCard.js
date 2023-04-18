@@ -14,7 +14,7 @@ class CharacterCardComponent extends Component {
   }
 
   render() {
-    this.element.innerHTML = `<img src="img/no-one.jpg" alt="Character's Name and family" class="character__picture card-img-top" />
+    this.element.innerHTML = `<img src="img/${this.character.character.imageSource}" class="character__picture card-img-top" />
           <div class="card-body">
             <h2 class="character__name card-title h4">Name & family</h2>
             <div class="character__info">
