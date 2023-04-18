@@ -1,8 +1,15 @@
-import characters from "../js/characters/characters.js";
-import CharacterCardComponent from "./components/CharacterCard/CharacterCard.js";
-import Component from "./components/Component.js";
+import characters from "./characters/characters.js";
+import AppComponent from "./components/AppComponent/AppComponent.js";
+import CardListComponent from "./components/CardListComponent/CardListComponent.js";
+import CharacterCardComponent from "./components/CharacterCard/CharacterCardComponent.js";
 
 console.log(characters[0]);
+const body = document.querySelector("body");
+new AppComponent(body);
 const appContainer = document.querySelector(".app");
-const card1 = new CharacterCardComponent(appContainer, "joffrey");
-console.log(card1);
+new CardListComponent(appContainer);
+const cardList = document.querySelector(".characters-list");
+
+characters.forEach((character) => {
+  new CharacterCardComponent(cardList, character);
+});
