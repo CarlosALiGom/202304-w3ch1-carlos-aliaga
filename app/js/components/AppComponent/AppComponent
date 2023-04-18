@@ -1,0 +1,9 @@
+import Component from "../Component.js";
+
+class AppComponet extends Component {
+  constructor(parentElemnt) {
+    super(parentElemnt, "div", "app container");
+  }
+}
+
+export default AppComponet;
