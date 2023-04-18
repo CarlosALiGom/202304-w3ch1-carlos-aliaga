@@ -1,9 +1,9 @@
-import Component from "../Component";
+import Component from "../Component.js";
 
-class CardList extends Component {
+class CardListComponent extends Component {
   constructor(parentElement) {
     super(parentElement, "ul", "characters-list row list-unstyled");
   }
 }
 
-export default CardList;
+export default CardListComponent;
