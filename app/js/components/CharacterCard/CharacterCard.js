@@ -1,5 +1,8 @@
 import Component from "../Component/Component.js";
-
+import King from "../../characters/king/King.js";
+import Advisor from "../../characters/Advisor/Advisor.js";
+import Fighter from "../../characters/Fighter/Fighter.js";
+import Squire from "../../characters/Squire/Squire.js";
 class CharacterCardComponent extends Component {
   character;
 
