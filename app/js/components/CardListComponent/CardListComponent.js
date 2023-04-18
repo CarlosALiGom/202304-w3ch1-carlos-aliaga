@@ -1,19 +1,21 @@
 import Component from "../Component";
+import characters from "../../characters/characters";
+import CharacterCardComponent from "../CharacterCard/CharacterCard";
 
 class CardComponent extends Component {
-  image;
+  characters;
 
-  constructor(parentElement, image) {
+  constructor(parentElement) {
     super(parentElement, "ul", "characters-list row list-unstyled");
-    this.image = image;
+    this.characters = characters;
 
     this.renderHtml();
   }
 
   renderHtml() {
-    this.element.innerHTML = `
-    
-    `;
+    characters.forEach((character) => {
+      new CharacterCardComponent(this.element, character);
+    });
   }
 }
 
